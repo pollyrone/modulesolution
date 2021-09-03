@@ -8,6 +8,7 @@ h1 {
 	text-align: center;
 }
 section {
+	display: inline-block;
 	border:  2px solid black;
 	background-color: #ECBF8A;
 	width: 90%;
