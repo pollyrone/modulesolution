@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	box-sizing: inherit;
 }
 
 h1 {
@@ -12,7 +13,8 @@ section {
 	border:  2px solid black;
 	background-color: #ECBF8A;
 	width: 90%;
-	height:  200px;
+	height: auto;
+	min-height: 200px;
 	margin-right: auto; 
 	margin-left: auto;
 	margin-bottom: 40px;
@@ -62,13 +64,13 @@ section {
 	background-color: transparent;
 	border: none;
 	text-align: left;
-	margin-top: 40px;
 	margin-left: 10px;
     margin-right: 10px;
 
 }
 p.row {
 	width: 100%;
+	height: 200px;
 }
 
 @media (min-width: 992px) {
@@ -89,6 +91,9 @@ p.row {
 @media (max-width:  767px) {
 	.col-md-12 {
 		width: 100%;
+		height: auto;
 		float: left;
+		display: inline-block;
+
 	}
 }
